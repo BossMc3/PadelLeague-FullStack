@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Confirmation</title>
+    </head>
+<body style="margin: 0; padding: 0; background-color: #fdfdfd; font-family: Arial, Helvetica, sans-serif;">
+
+    <table border="0" cellpadding="0" cellspacing="0" width="100%" style="table-layout: fixed;">
+        <tr>
+            <td align="center" style="padding: 40px 10px;">
+                
+                <table border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 600px; background-color: #ffffff; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.08);">
+                    
+                    <tr>
+                        <td align="left" style="background: linear-gradient(135deg, #3b82f6 0%, #1e40af 100%); background-color: #1e40af; color: #ffffff; padding: 25px 30px;">
+                            <h2 style="margin: 0; font-size: 22px; font-weight: bold; letter-spacing: -0.5px;">PADELLEAGUE</h2>
+                            <p style="margin: 5px 0 0; font-size: 15px; opacity: 0.9;">Welcome, <span th:text="${nume}" style="font-weight: bold;">User</span>!</p>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td align="left" style="padding: 40px 30px; line-height: 1.6; color: #444; font-size: 16px;">
+                            <p style="margin: 0 0 20px;">We're glad to have you on board. Here is your verification code:</p>
+                            
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%" style="margin-bottom: 25px;">
+                                <tr>
+                                    <td align="center" style="background-color: #f9f9f9; border: 1px solid #eee; border-radius: 8px; padding: 25px;">
+                                        <p style="margin: 0 0 10px; font-size: 13px; color: #777; font-weight: bold; text-transform: uppercase; letter-spacing: 1px;">YOUR VERIFICATION CODE:</p>
+                                        <span style="font-size: 32px; font-weight: bold; color: #3b82f6; letter-spacing: 4px;" th:text="${cod}">123456</span>
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td align="center" style="padding-top: 10px;">
+                                        <a th:href="${link_actiune}" style="display: inline-block; background-color: #3b82f6; color: #ffffff; padding: 15px 35px; border-radius: 50px; font-size: 16px; font-weight: bold; text-decoration: none; box-shadow: 0 3px 6px rgba(59,130,246,0.25);">
+                                            VERIFY YOUR ACCOUNT
+                                        </a>
+                                    </td>
+                                </tr>
+                            </table>
+
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td align="center" style="background-color: #eee; color: #777; padding: 20px 30px; font-size: 13px; line-height: 1.4;">
+                            <p style="margin: 0;">&copy; 2026 PadelLeague</p>
+                        </td>
+                    </tr>
+
+                </table>
+                </td>
+        </tr>
+    </table>
+
+</body>
+</html>
